@@ -1,0 +1,29 @@
+.cart-logo-container{
+  position: relative;
+}
+
+.cart-logo-container::after{
+  content: attr(data-cartcount);
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  border-radius: 50%;
+  left: 10px;
+  top: 0px;
+  color: rgb(106, 187, 24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.dark {
+  background-color: black !important;
+  color: white !important;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
